@@ -2,6 +2,8 @@ import Search from './modules/search'
 import Chat from './modules/chat'
 import RegistrationForm from './modules/registrationForm'
 
+console.log('Hello Heroku from frontend.js...')
+
 if (document.querySelector("#registration-form")) {
 	new RegistrationForm()
 }
