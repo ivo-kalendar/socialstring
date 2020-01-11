@@ -49,7 +49,6 @@ app.use((req, res, next)=>{
 	next()
 })
 
-console.log('Hello Heroku from dev server...')
 
 // IMPORTING ALL THE ROOTS //
 const router = require('./router')
