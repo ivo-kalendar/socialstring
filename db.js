@@ -1,6 +1,6 @@
 
 const dotenv = require('dotenv')
-// CONFIGURING THE .ENV FOR SECURE VARIABLES //
+// CONFIGURING THE .ENV FOR SECURE VARIABLES  //
 dotenv.config()
 const mongodb = require('mongodb')
 
