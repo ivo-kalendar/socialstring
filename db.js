@@ -3,6 +3,8 @@ const dotenv = require('dotenv');
 dotenv.config();
 const mongodb = require('mongodb');
 
+const PORT = process.env.PORT || 3000;
+
 // MAIN DATABASE CONNECTION //
 mongodb.connect(
     process.env.CONNECTIONSTRING,
@@ -15,9 +17,9 @@ mongodb.connect(
         module.exports = client;
         // REQUIREING EXPRESS() FOR LISTENING ON PORT AFTER CONNECTED TO THE DATABASE //
         const app = require('./app');
-        app.listen(process.env.PORT, () =>
+        app.listen(PORT, () =>
             console.log(
-                `Connected to Database and now Listening on Port: ${process.env.PORT}...`
+                `Server started on port ${PORT} and Connected to database.`
             )
         );
     }
